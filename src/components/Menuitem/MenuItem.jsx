@@ -13,16 +13,16 @@ const MenuItem = ({ title, price, tags }) => {
   return (<div className="app__menuitem">
     <div className="app__menuitem-head">
       <div className="app__menuitem-name">
-        <p className="p__cormorant-title" style={{ color: '#DCCA87' }}>{title}</p>
+        <p className="p__cormorant-title p__cormorant-title" style={{ color: '#DCCA87' }}>{title}</p>
       </div>
       <div className="app__menuitem-dash" />
       <div className="app__menuitem-price">
-        <p className="p__cormorant-price">{newprice}</p>
+        <p className="p__cormorant-price p__cormorant-price">{newprice}</p>
       </div>
     </div>
 
     <div className="app__menuitem-sub">
-      <p className="p__opensans-variant app__menu-tags" style={{ color: '#AAAAAA' }}>
+      <p className="p__opensans-variant app__menu-tags p__opensans-variant " style={{ color: '#AAAAAA' }}>
 
         {tagss.map((e, index) =>
 
