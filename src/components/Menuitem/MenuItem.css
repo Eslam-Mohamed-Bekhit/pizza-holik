@@ -99,49 +99,48 @@
 }
 
 @media screen and (max-width : 1150px) {
-
     .p__cormorant-title {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .p__cormorant-price {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .p__opensans-variant {
 
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width : 650px) {
 
     .p__cormorant-title {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .p__cormorant-price {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .p__opensans-variant {
 
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width : 450px) {
 
     .p__cormorant-title {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .p__cormorant-price {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .p__opensans-variant {
 
-        font-size: 16px;
+        font-size: 18px;
     }
 }
