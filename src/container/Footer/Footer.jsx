@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_logo">
-         
+
         <div class="app__footer-section_logo" > <p class="app__footer-logo">PizzaHolik</p><img src={icon} alt="footer_logo" />  </div>
         <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
         <img src={images.spoon} className="spoon__img" style={{ marginTop: 15 }} alt="spoon" />
@@ -41,7 +41,7 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__opensans">2021 PizzaHolik. All Rights reserved By Eslam Kalifa.</p>
+      <p className="p__opensans">2021 PizzaHolik. All Rights reserved By Eslam Mohamed Bekhit.</p>
     </div>
 
   </div>
