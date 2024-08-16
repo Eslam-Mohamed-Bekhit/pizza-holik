@@ -35,7 +35,14 @@ const FindUs = () => {
       </div>
 
       <div className="app__wrapper_img">
-        <img src={map} alt="finus_img" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2443.797329483049!2d31.132467255637643!3d29.977954885203907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1723813531260!5m2!1sar!2seg" width="900" height="675"
+
+          allowFullscreen="" loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade">
+
+        </iframe>
+
       </div>
     </div>)
 };
