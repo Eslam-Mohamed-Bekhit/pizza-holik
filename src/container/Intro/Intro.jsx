@@ -5,9 +5,9 @@ import { meal } from '../../constants';
 import './Intro.css';
 
 const Intro = () => {
-  const [playVideo, setPlayVideo] = React.useState(false);
+  const [playVideo, setPlayVideo] = React.useState(true);
   const vidRef = React.useRef();
-const overlayRef = React.useRef()
+  const overlayRef = React.useRef()
   return (
     <div className="app__video">
       <video
@@ -17,18 +17,19 @@ const overlayRef = React.useRef()
         loop
         controls={false}
         muted
+        autoPlay
       />
-      <div    ref={overlayRef} className="app__video-overlay flex__center">
+      <div ref={overlayRef} className="app__video-overlay flex__center">
         <div
           className="app__video-overlay_circle flex__center"
           onClick={() => {
             setPlayVideo(!playVideo);
             if (playVideo) {
               vidRef.current.pause();
-              overlayRef.current.style.backgroundColor= 'rgba(0,0,0,0.65)'
+              overlayRef.current.style.backgroundColor = 'rgba(0,0,0,0.65)'
             } else {
               vidRef.current.play();
-              overlayRef.current.style.backgroundColor= 'transparent'
+              overlayRef.current.style.backgroundColor = 'transparent'
             }
           }}
         >

@@ -1,12 +1,12 @@
 .app__navbar {
     position: fixed;
     z-index: 9999;
-    
+
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
 
     padding: 1rem 2rem;
 }
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
     font: italic bold 4rem/2.5rem var(--font-base);
 }
 
@@ -132,6 +132,29 @@
     .app__navbar-smallscreen {
         display: flex;
     }
+
+    .hamburgerMenu {
+        font-size: 45px;
+        margin-left: 15px;
+    }
+
+    .app__navbar-smallscreen_overlay .overlay__close {
+        margin-right: 5px;
+        font-size: 60px;
+
+    }
+
+    .app__navbar-smallscreen_links li {
+        font-size: 2.5rem;
+    }
+
+    .app__navbar-logo img {
+        width: 60px;
+    }
+
+    .app__navbar-logo-name {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -139,11 +162,15 @@
         padding: 1rem;
     }
 
+    .app__navbar-logo-name {
+        font-size: 3rem;
+    }
+
     .app__navbar-login {
         display: none;
     }
 
     .app__navbar-logo img {
-        width: 110px;
+        width: 60px;
     }
 }

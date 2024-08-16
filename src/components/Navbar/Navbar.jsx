@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        
-        Pizza Holik  <img src={icon} alt="app__logo" /> 
+
+        <p className='app__navbar-logo-name'>Pizza Holik </p> <img src={icon} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="#home">Home</a></li>
@@ -27,10 +27,10 @@ const Navbar = () => {
         <a href="/" className="p__opensans">Register</a>
       </div>
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu color="#fff" className='hamburgerMenu' onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-            <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
+            <MdOutlineRestaurantMenu className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
               <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
               <li><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>

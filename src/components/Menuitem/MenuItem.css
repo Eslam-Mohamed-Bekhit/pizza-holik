@@ -3,9 +3,18 @@
     margin: 1rem 0;
 
 
-
     display: flex;
     flex-direction: column;
+}
+
+.p__opensans-item {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
 }
 
 .app__menuitem-head {
@@ -26,8 +35,8 @@
 }
 
 
-.app__menuitem-name p{
-    border: none ;
+.app__menuitem-name p {
+    border: none;
 }
 
 
@@ -42,19 +51,97 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-   
+
 
 }
-.app__menu-tags{
+
+.p__cormorant-price {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 23px;
+    border-bottom: 1px solid var(--color-golden);
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.p__cormorant-title {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 23px;
+    border-bottom: 1px solid var(--color-golden);
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.app__menu-tags {
     cursor: pointer;
 }
-.app__menu-acive{
-color : var(--color-golden);
-font-weight: bold;
+
+.app__menu-acive {
+    color: var(--color-golden);
+    font-weight: bold;
 }
 
 .app__menuitem-price p {
- 
-    border: none ;
 
+    border: none;
+
+}
+
+@media screen and (max-width : 1150px) {
+
+    .p__cormorant-title {
+        font-size: 22px;
+    }
+
+    .p__cormorant-price {
+        font-size: 18px;
+    }
+
+    .p__opensans-variant {
+
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width : 650px) {
+
+    .p__cormorant-title {
+        font-size: 22px;
+    }
+
+    .p__cormorant-price {
+        font-size: 18px;
+    }
+
+    .p__opensans-variant {
+
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+
+    .p__cormorant-title {
+        font-size: 22px;
+    }
+
+    .p__cormorant-price {
+        font-size: 18px;
+    }
+
+    .p__opensans-variant {
+
+        font-size: 16px;
+    }
 }
